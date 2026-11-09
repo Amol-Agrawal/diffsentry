@@ -14,3 +14,4 @@ pr-review-agent.zip
 run_eval.sh
 eval/results/cache/
 eval/results/*.md
+"Claude outputs/"

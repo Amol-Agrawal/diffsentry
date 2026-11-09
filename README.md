@@ -1,7 +1,7 @@
-# pr-review-agent
+# DiffSentry
 
-A bot that reviews GitHub pull requests. It reads the diff, looks at surrounding code when it needs
-to, runs ruff, and leaves inline comments on bugs and security problems.
+DiffSentry is a bot that reviews GitHub pull requests. It reads the diff, looks at surrounding
+code when it needs to, runs ruff, and leaves inline comments on bugs and security problems.
 
 I built this to learn LangGraph properly and to see how far a small model gets on code review when
 you give it tools and actually measure it.
