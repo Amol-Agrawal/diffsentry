@@ -1,0 +1,5 @@
+{
+  "title": "Rename formatting helpers",
+  "description": "Rename fmt_* helpers to clearer names and switch to f-strings. Callers updated.",
+  "bugs": []
+}

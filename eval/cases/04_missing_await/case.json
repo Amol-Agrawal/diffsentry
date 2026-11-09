@@ -1,0 +1,11 @@
+{
+  "title": "Notify all users about maintenance",
+  "description": "Sends the maintenance email to every user and returns how many were notified.",
+  "bugs": [
+    {
+      "path": "app/notify.py",
+      "match": "        send_email(u, subject)",
+      "category": "bug"
+    }
+  ]
+}

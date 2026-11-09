@@ -1,0 +1,11 @@
+{
+  "title": "Add average order value metric",
+  "description": "Finance wants average order value (in dollars, with cents) on the weekly report.",
+  "bugs": [
+    {
+      "path": "app/pricing.py",
+      "match": "return total_revenue // order_count",
+      "category": "bug"
+    }
+  ]
+}

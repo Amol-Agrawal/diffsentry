@@ -1,0 +1,11 @@
+{
+  "title": "Add is_active helper",
+  "description": "Small helper for account status checks.",
+  "bugs": [
+    {
+      "path": "app/status.py",
+      "match": "return status is \"active\"",
+      "category": "bug"
+    }
+  ]
+}

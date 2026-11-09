@@ -1,0 +1,11 @@
+{
+  "title": "Search users by email",
+  "description": "Admin search box: find users whose email contains the typed text.",
+  "bugs": [
+    {
+      "path": "app/users_repo.py",
+      "match": "query = f\"SELECT",
+      "category": "security"
+    }
+  ]
+}

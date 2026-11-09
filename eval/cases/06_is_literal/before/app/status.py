@@ -1,0 +1,2 @@
+ACTIVE = "active"
+SUSPENDED = "suspended"

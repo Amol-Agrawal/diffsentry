@@ -1,0 +1,11 @@
+{
+  "title": "Expose add_line on the public order API",
+  "description": "The POST /orders/{id}/lines endpoint passes the client's qty straight to add_line.",
+  "bugs": [
+    {
+      "path": "app/orders.py",
+      "match": "self.lines.append((sku, qty, price_cents))",
+      "category": "bug"
+    }
+  ]
+}

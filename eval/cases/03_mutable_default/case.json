@@ -1,0 +1,11 @@
+{
+  "title": "Add add_item helper to cart",
+  "description": "Helper used by the API to add an item to a cart (creates a new cart if none is given).",
+  "bugs": [
+    {
+      "path": "app/cart.py",
+      "match": "def add_item(item, cart=[]):",
+      "category": "bug"
+    }
+  ]
+}

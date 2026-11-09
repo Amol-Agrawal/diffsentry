@@ -1,0 +1,11 @@
+{
+  "title": "Wire up Stripe config",
+  "description": "Adds Stripe settings so checkout can talk to the payment API.",
+  "bugs": [
+    {
+      "path": "app/config.py",
+      "match": "STRIPE_API_KEY = \"sk_live_",
+      "category": "security"
+    }
+  ]
+}

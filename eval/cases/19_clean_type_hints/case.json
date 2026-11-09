@@ -1,0 +1,5 @@
+{
+  "title": "Add type hints and docstrings to geometry helpers",
+  "description": "No behavior change.",
+  "bugs": []
+}

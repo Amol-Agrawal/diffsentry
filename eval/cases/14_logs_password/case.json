@@ -1,0 +1,11 @@
+{
+  "title": "Add login audit logging",
+  "description": "Security asked for an audit log of login attempts.",
+  "bugs": [
+    {
+      "path": "app/auth.py",
+      "match": "password=%s",
+      "category": "security"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Load tenant settings from uploaded YAML",
+  "description": "Customers upload a settings.yaml from the dashboard; we load it on each request.",
+  "bugs": [
+    {
+      "path": "app/settings_loader.py",
+      "match": "return yaml.load(f",
+      "category": "security"
+    }
+  ]
+}

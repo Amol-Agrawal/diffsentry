@@ -1,0 +1,11 @@
+{
+  "title": "Hide out-of-stock items",
+  "description": "Remove items with zero quantity before rendering the catalog.",
+  "bugs": [
+    {
+      "path": "app/inventory.py",
+      "match": "items.remove(item)",
+      "category": "bug"
+    }
+  ]
+}

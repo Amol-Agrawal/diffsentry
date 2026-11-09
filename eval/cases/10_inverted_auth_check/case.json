@@ -1,0 +1,11 @@
+{
+  "title": "Restrict settings editing",
+  "description": "Only admins should be able to edit org settings.",
+  "bugs": [
+    {
+      "path": "app/permissions.py",
+      "match": "if not user.is_admin:",
+      "category": "security"
+    }
+  ]
+}

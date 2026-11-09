@@ -1,0 +1,5 @@
+{
+  "title": "Add slugify for product URLs",
+  "description": "New helper plus unit tests.",
+  "bugs": []
+}

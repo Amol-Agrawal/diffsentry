@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.env
+*.pem
+eval/results/*.json
+eval/results/*.html
+pr-review-agent.zip
+run_eval.sh
+eval/results/cache/
+eval/results/*.md

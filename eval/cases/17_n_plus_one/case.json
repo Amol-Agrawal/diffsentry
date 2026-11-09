@@ -1,0 +1,11 @@
+{
+  "title": "Customer order summaries for the export job",
+  "description": "Nightly export calls this with all active customers (about 10k ids).",
+  "bugs": [
+    {
+      "path": "app/reports.py",
+      "match": "orders = db.execute(",
+      "category": "performance"
+    }
+  ]
+}

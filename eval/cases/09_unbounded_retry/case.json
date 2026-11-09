@@ -1,0 +1,11 @@
+{
+  "title": "Retry flaky upstream calls",
+  "description": "The inventory API is flaky; retry until it succeeds.",
+  "bugs": [
+    {
+      "path": "app/http_retry.py",
+      "match": "while True:",
+      "category": "error-handling"
+    }
+  ]
+}

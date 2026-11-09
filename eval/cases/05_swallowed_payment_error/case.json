@@ -1,0 +1,11 @@
+{
+  "title": "Make charge() more robust",
+  "description": "Gateway sometimes throws; make charge() not crash the checkout worker.",
+  "bugs": [
+    {
+      "path": "app/payments.py",
+      "match": "except Exception:",
+      "category": "error-handling"
+    }
+  ]
+}

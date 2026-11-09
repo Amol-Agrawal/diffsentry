@@ -1,0 +1,11 @@
+{
+  "title": "Add page_numbers helper for the pager",
+  "description": "Adds a helper that returns every page number the UI pager should render.",
+  "bugs": [
+    {
+      "path": "app/pagination.py",
+      "match": "return list(range(1, total_pages",
+      "category": "bug"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+name: AI review
+
+# Dogfooding: the agent reviews PRs to this repo, running inside GitHub Actions.
+# No server needed. Skipped until the GOOGLE_API_KEY secret is set.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  review:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.GOOGLE_API_KEY != ''
+      - uses: actions/setup-python@v5
+        if: env.GOOGLE_API_KEY != ''
+        with:
+          python-version: "3.12"
+          cache: pip
+      - if: env.GOOGLE_API_KEY != ''
+        run: pip install . && pr-review action

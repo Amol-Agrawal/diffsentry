@@ -1,0 +1,11 @@
+{
+  "title": "Nightly database backup",
+  "description": "Backs up a tenant database; db_name comes from the tenant signup form.",
+  "bugs": [
+    {
+      "path": "app/backup.py",
+      "match": "subprocess.run(cmd, shell=True",
+      "category": "security"
+    }
+  ]
+}

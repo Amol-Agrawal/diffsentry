@@ -1,0 +1,11 @@
+{
+  "title": "Show mean latency on the service dashboard",
+  "description": "Dashboard calls mean_latency() for every service, including newly created services that have not received traffic yet.",
+  "bugs": [
+    {
+      "path": "app/metrics.py",
+      "match": "return sum(samples) / len(samples)",
+      "category": "bug"
+    }
+  ]
+}
